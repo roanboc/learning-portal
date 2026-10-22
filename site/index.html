@@ -6,96 +6,27 @@
 <title>Learn All · Where do you want to learn?</title>
 <meta name="description" content="Two series of short films, labs and simulations. Learning Data shows how data moves and keeps its meaning. Learning Systems shows how living systems organise themselves.">
 <meta property="og:title" content="Learn All"><meta property="og:description" content="Pick a path: Learning Data or Learning Systems.">
+<link rel="alternate" hreflang="en" href="https://learn-all.org/"><link rel="alternate" hreflang="es" href="https://learn-all.org/es/">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
-<style>
-/* Colours come from the two series: Learning Data's blue on light or dark panels,
-   and Learning Systems' deep sea with a teal glow. */
-:root{--bg:#f3f5f9;--fg:#121826;--muted:#566174;--card:#fff;--line:rgba(15,25,45,.1);--accent:#2a64c4;--on-accent:#fff;--stage:#070b17;
-  --shadow:0 1px 2px rgba(15,25,45,.06),0 10px 30px rgba(15,25,45,.08);--mono:"IBM Plex Mono",Menlo,Consolas,monospace;color-scheme:light dark}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#060910;--fg:#eef3fb;--muted:#9aa6b8;--card:#0e1422;--line:rgba(255,255,255,.1);--accent:#6aa8ff;--on-accent:#06101f;
-  --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.35)}}
-:root[data-theme="dark"]{--bg:#060910;--fg:#eef3fb;--muted:#9aa6b8;--card:#0e1422;--line:rgba(255,255,255,.1);--accent:#6aa8ff;--on-accent:#06101f;
-  --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.35)}
-*{box-sizing:border-box}
-body{margin:0;min-height:100vh;display:flex;flex-direction:column;background:var(--bg);color:var(--fg);font-family:Manrope,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55;overflow-x:hidden}
-.top{padding:16px}
-.top-in{max-width:1040px;margin:0 auto}
-.brand{display:inline-flex;align-items:center;gap:10px;font-size:18px;font-weight:800;color:var(--fg);text-decoration:none}
-.brand img{width:28px;height:28px}
-.brand:focus-visible{outline:3px solid var(--accent);outline-offset:4px;border-radius:6px}
-main{flex:1;width:100%;max-width:1040px;margin:0 auto;padding:12px 16px 40px}
-.hero{padding:20px 0 30px}
-.eyebrow{margin:0 0 10px;font-family:var(--mono);font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
-h1{margin:0 0 12px;font-size:clamp(30px,5.5vw,54px);line-height:1.08;letter-spacing:-.02em;max-width:18ch}
-.lead{margin:0;max-width:56ch;font-size:clamp(17px,2vw,20px);color:var(--muted)}
-.paths{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:20px}
-.path{display:flex;flex-direction:column;overflow:hidden;border-radius:20px;border:1px solid var(--line);background:var(--card);box-shadow:var(--shadow);color:var(--fg);text-decoration:none;transition:transform .2s,box-shadow .2s,border-color .2s}
-.path:hover{transform:translateY(-3px);border-color:var(--accent);box-shadow:0 18px 44px rgba(0,0,0,.22)}
-.path:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
-.art{display:block;aspect-ratio:16/9;background:var(--stage)}
-.art svg{display:block;width:100%;height:100%}
-.body{display:flex;flex:1;flex-direction:column;align-items:flex-start;gap:8px;padding:22px 24px 24px}
-.tag{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
-.name{font-size:28px;font-weight:800;letter-spacing:-.01em;line-height:1.15}
-.desc{font-size:16px;color:var(--muted)}
-.go{display:inline-flex;margin-top:auto;padding:10px 18px;border-radius:999px;background:var(--accent);color:var(--on-accent);font-weight:700}
-.systems{background:#020b10;color:#e6fbff;border-color:rgba(120,230,240,.22)}
-.systems .art{background:#020b10}
-.systems .tag,.systems .desc{color:#8fb3bd}
-.systems .go{background:#4ff0e0;color:#02131a}
-.systems:hover{border-color:#4ff0e0}
-.systems:focus-visible{outline-color:#4ff0e0}
-.halo{animation:breathe 6s ease-in-out infinite}
-.flow{stroke-dasharray:10 12;animation:flow 2.4s linear infinite}
-@keyframes breathe{50%{opacity:.45}}
-@keyframes flow{to{stroke-dashoffset:-44}}
-@media (prefers-reduced-motion:reduce){.path,.path:hover{transition:none;transform:none}.halo,.flow{animation:none}}
-footer{padding:8px 16px 32px;text-align:center;font-size:14px;color:var(--muted)}
-footer p{max-width:70ch;margin:0 auto}
-</style>
+<link rel="stylesheet" href="assets/portal.css">
 </head>
 <body>
-<header class="top"><div class="top-in"><a class="brand" href="./"><img src="assets/favicon.svg" alt="" width="28" height="28"><span>Learn All</span></a></div></header>
+<header class="top"><div class="top-in"><a class="brand" href="./"><img src="assets/favicon.svg" alt="" width="28" height="28"><span>Learn All</span></a><span class="lang" role="group" aria-label="Language"><a href="./" aria-current="true" lang="en" hreflang="en">EN</a><a href="es/" lang="es" hreflang="es">ES</a></span></div></header>
 <main>
+<aside class="big-screen" aria-label="Tip" data-big-screen>
+<p>For a better experience, use a big screen. On a phone, some interactive parts may be hidden.</p>
+<button type="button">Got it</button>
+</aside>
 <section class="hero">
 <p class="eyebrow">Learn All</p>
-<h1>Where do you want to learn?</h1>
+<h1 tabindex="-1">Where do you want to learn?</h1>
 <p class="lead">Two series of short films, labs and simulations. Each one stands on its own, so pick the one you need today.</p>
 </section>
 <nav class="paths" aria-label="Choose a series">
 <a class="path data" href="https://data.learn-all.org/">
-<span class="art" aria-hidden="true">
-<svg viewBox="0 0 640 360">
-<defs>
-<linearGradient id="dflow" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#e0893b"/><stop offset=".5" stop-color="#8fb0ff"/><stop offset="1" stop-color="#e8c04b"/></linearGradient>
-<filter id="dglow" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-</defs>
-<rect x="36" y="96" width="156" height="168" rx="18" fill="#0b1224" stroke="#e0893b" stroke-width="2"/>
-<rect x="242" y="96" width="156" height="168" rx="18" fill="#0b1224" stroke="#b9c6e0" stroke-width="2"/>
-<rect x="448" y="96" width="156" height="168" rx="18" fill="#0b1224" stroke="#e8c04b" stroke-width="2"/>
-<path class="flow" d="M192 180H242M398 180H448" fill="none" stroke="url(#dflow)" stroke-width="3" filter="url(#dglow)"/>
-<g fill="#e0893b">
-<circle cx="75" cy="130" r="7" opacity=".9"/><circle cx="101" cy="130" r="7" opacity=".4"/><circle cx="127" cy="130" r="7" opacity=".7"/><circle cx="153" cy="130" r="7" opacity=".9"/>
-<circle cx="75" cy="156" r="7" opacity=".4"/><circle cx="101" cy="156" r="7" opacity=".9"/><circle cx="127" cy="156" r="7" opacity=".4"/><circle cx="153" cy="156" r="7" opacity=".6"/>
-<circle cx="75" cy="182" r="7" opacity=".7"/><circle cx="101" cy="182" r="7" opacity=".5"/><circle cx="127" cy="182" r="7" opacity=".9"/><circle cx="153" cy="182" r="7" opacity=".4"/>
-</g>
-<g fill="#b9c6e0">
-<circle cx="281" cy="130" r="7" opacity=".5"/><circle cx="307" cy="130" r="7" opacity=".9"/><circle cx="333" cy="130" r="7" opacity=".4"/><circle cx="359" cy="130" r="7" opacity=".8"/>
-<circle cx="281" cy="156" r="7" opacity=".9"/><circle cx="307" cy="156" r="7" opacity=".6"/><circle cx="333" cy="156" r="7" opacity=".9"/><circle cx="359" cy="156" r="7" opacity=".5"/>
-<circle cx="281" cy="182" r="7" opacity=".4"/><circle cx="307" cy="182" r="7" opacity=".8"/><circle cx="333" cy="182" r="7" opacity=".6"/><circle cx="359" cy="182" r="7" opacity=".9"/>
-</g>
-<g fill="#e8c04b">
-<circle cx="487" cy="130" r="7" opacity=".8"/><circle cx="513" cy="130" r="7" opacity=".5"/><circle cx="539" cy="130" r="7" opacity=".9"/><circle cx="565" cy="130" r="7" opacity=".4"/>
-<circle cx="487" cy="156" r="7" opacity=".5"/><circle cx="513" cy="156" r="7" opacity=".9"/><circle cx="539" cy="156" r="7" opacity=".6"/><circle cx="565" cy="156" r="7" opacity=".8"/>
-<circle cx="487" cy="182" r="7" opacity=".9"/><circle cx="513" cy="182" r="7" opacity=".4"/><circle cx="539" cy="182" r="7" opacity=".8"/><circle cx="565" cy="182" r="7" opacity=".6"/>
-</g>
-<g fill="#9fb4d6" font-family="Manrope,sans-serif" font-size="17" text-anchor="middle">
-<text x="114" y="236">raw</text><text x="320" y="236">clean</text><text x="526" y="236">ready</text>
-</g>
-</svg>
-</span>
+<span class="art" aria-hidden="true"><img src="assets/art-data.svg" alt="" width="640" height="360"></span>
 <span class="body">
 <span class="tag">Films · Labs · Scenarios</span>
 <strong class="name">Learning Data</strong>
@@ -104,21 +35,7 @@ footer p{max-width:70ch;margin:0 auto}
 </span>
 </a>
 <a class="path systems" href="https://systems.learn-all.org/">
-<span class="art" aria-hidden="true">
-<svg viewBox="0 0 640 360">
-<defs>
-<radialGradient id="sphere" cx=".38" cy=".34" r=".72"><stop offset="0" stop-color="#b6fff7"/><stop offset=".4" stop-color="#1fb8b0"/><stop offset="1" stop-color="#03141b"/></radialGradient>
-<radialGradient id="halo"><stop offset=".55" stop-color="#4ff0e0" stop-opacity="0"/><stop offset=".8" stop-color="#4ff0e0" stop-opacity=".22"/><stop offset="1" stop-color="#4ff0e0" stop-opacity="0"/></radialGradient>
-</defs>
-<g fill="#e6fbff" opacity=".6">
-<circle cx="60" cy="50" r="1.2"/><circle cx="590" cy="60" r="1.2"/><circle cx="40" cy="300" r="1.2"/><circle cx="600" cy="310" r="1.2"/><circle cx="560" cy="30" r="1"/><circle cx="90" cy="330" r="1"/><circle cx="230" cy="40" r="1"/><circle cx="420" cy="330" r="1"/>
-</g>
-<circle class="halo" cx="320" cy="180" r="168" fill="url(#halo)"/>
-<circle cx="320" cy="180" r="100" fill="url(#sphere)"/>
-<ellipse cx="320" cy="180" rx="168" ry="42" transform="rotate(-14 320 180)" fill="none" stroke="#4ff0e0" stroke-opacity=".55" stroke-width="2"/>
-<circle cx="196" cy="118" r="4" fill="#ffb547"/><circle cx="448" cy="112" r="3" fill="#b4ff5a"/><circle cx="472" cy="246" r="4" fill="#ff6b9a"/><circle cx="176" cy="250" r="3" fill="#c08bff"/><circle cx="300" cy="70" r="2.5" fill="#4ff0e0"/><circle cx="520" cy="180" r="2.5" fill="#ffb547"/><circle cx="110" cy="170" r="2" fill="#8fb3bd"/>
-</svg>
-</span>
+<span class="art" aria-hidden="true"><img src="assets/art-systems.svg" alt="" width="640" height="360"></span>
 <span class="body">
 <span class="tag">Simulations · Runs in the browser</span>
 <strong class="name">Learning Systems</strong>
@@ -129,5 +46,6 @@ footer p{max-width:70ch;margin:0 auto}
 </nav>
 </main>
 <footer><p>Each series has its own notices and licence. The stories and organisations in the films are fictional.</p></footer>
+<script src="assets/portal.js" defer></script>
 </body>
 </html>
