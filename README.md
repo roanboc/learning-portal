@@ -11,6 +11,6 @@ The page is `site/index.html`. It is published to **https://learn-all.org/** by 
 
 1. **Settings → Pages → Build and deployment → Source:** GitHub Actions.
 2. **Settings → Pages → Custom domain:** `learn-all.org`. Turn on Enforce HTTPS once GitHub offers it.
-3. **DNS (Cloudflare, DNS only, not proxied):** add four `A` records for `learn-all.org` pointing to GitHub Pages: `185.199.108.153`, `185.199.109.153`, `185.199.110.153` and `185.199.111.153`. Check GitHub's Pages documentation for the current addresses first.
+3. **DNS (Cloudflare, DNS only, not proxied):** add `A` records for `learn-all.org` that point to GitHub Pages. Copy the addresses under the `pages` key at https://api.github.com/meta, which GitHub keeps current. Four addresses are common, but check that list rather than trusting this README.
 
 The domain `learn-all.org` is already verified on the account.
