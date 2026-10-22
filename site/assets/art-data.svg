@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+<style>
+.flow{stroke-dasharray:10 12;animation:flow 2.4s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-44}}
+@media (prefers-reduced-motion:reduce){.flow{animation:none}}
+</style>
+<defs>
+<linearGradient id="dflow" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#e0893b"/><stop offset=".5" stop-color="#8fb0ff"/><stop offset="1" stop-color="#e8c04b"/></linearGradient>
+<filter id="dglow" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect x="36" y="96" width="156" height="168" rx="18" fill="#0b1224" stroke="#e0893b" stroke-width="2"/>
+<rect x="242" y="96" width="156" height="168" rx="18" fill="#0b1224" stroke="#b9c6e0" stroke-width="2"/>
+<rect x="448" y="96" width="156" height="168" rx="18" fill="#0b1224" stroke="#e8c04b" stroke-width="2"/>
+<path class="flow" d="M192 180H242M398 180H448" fill="none" stroke="url(#dflow)" stroke-width="3" filter="url(#dglow)"/>
+<g fill="#e0893b">
+<circle cx="75" cy="130" r="7" opacity=".9"/><circle cx="101" cy="130" r="7" opacity=".4"/><circle cx="127" cy="130" r="7" opacity=".7"/><circle cx="153" cy="130" r="7" opacity=".9"/>
+<circle cx="75" cy="156" r="7" opacity=".4"/><circle cx="101" cy="156" r="7" opacity=".9"/><circle cx="127" cy="156" r="7" opacity=".4"/><circle cx="153" cy="156" r="7" opacity=".6"/>
+<circle cx="75" cy="182" r="7" opacity=".7"/><circle cx="101" cy="182" r="7" opacity=".5"/><circle cx="127" cy="182" r="7" opacity=".9"/><circle cx="153" cy="182" r="7" opacity=".4"/>
+</g>
+<g fill="#b9c6e0">
+<circle cx="281" cy="130" r="7" opacity=".5"/><circle cx="307" cy="130" r="7" opacity=".9"/><circle cx="333" cy="130" r="7" opacity=".4"/><circle cx="359" cy="130" r="7" opacity=".8"/>
+<circle cx="281" cy="156" r="7" opacity=".9"/><circle cx="307" cy="156" r="7" opacity=".6"/><circle cx="333" cy="156" r="7" opacity=".9"/><circle cx="359" cy="156" r="7" opacity=".5"/>
+<circle cx="281" cy="182" r="7" opacity=".4"/><circle cx="307" cy="182" r="7" opacity=".8"/><circle cx="333" cy="182" r="7" opacity=".6"/><circle cx="359" cy="182" r="7" opacity=".9"/>
+</g>
+<g fill="#e8c04b">
+<circle cx="487" cy="130" r="7" opacity=".8"/><circle cx="513" cy="130" r="7" opacity=".5"/><circle cx="539" cy="130" r="7" opacity=".9"/><circle cx="565" cy="130" r="7" opacity=".4"/>
+<circle cx="487" cy="156" r="7" opacity=".5"/><circle cx="513" cy="156" r="7" opacity=".9"/><circle cx="539" cy="156" r="7" opacity=".6"/><circle cx="565" cy="156" r="7" opacity=".8"/>
+<circle cx="487" cy="182" r="7" opacity=".9"/><circle cx="513" cy="182" r="7" opacity=".4"/><circle cx="539" cy="182" r="7" opacity=".8"/><circle cx="565" cy="182" r="7" opacity=".6"/>
+</g>
+<g fill="#9fb4d6" font-family="Manrope,Arial,sans-serif" font-size="17" text-anchor="middle">
+<text x="114" y="236">raw</text><text x="320" y="236">clean</text><text x="526" y="236">ready</text>
+</g>
+</svg>
