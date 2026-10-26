@@ -66,8 +66,8 @@
   const PULSE_SPEED = 140;       // CSS px per second
   const REFRACTORY = 1.4;        // seconds before a neuron can fire again
   const SPONTANEOUS = 0.7;       // spontaneous firings per second, across the whole network
-  const PASS_ON = 0.55;          // chance a neighbour fires when a pulse arrives
-  const MAX_PULSES = 80;
+  const PASS_ON = 0.3;           // chance a neighbour fires when a pulse arrives
+  const MAX_PULSES = 60;
 
   let w = 0, h = 0, dpr = 1, nodes = [], edges = [], pulses = [], raf = 0, last = 0, time = 0;
   let colours = { net: '42,100,196', fire: '14,150,168' };
@@ -153,13 +153,18 @@
     });
     edges.forEach((e) => { e.act = Math.max(0, e.act - dt * 1.6); });
     if (Math.random() < SPONTANEOUS * dt) fire(Math.floor(Math.random() * nodes.length));
+    const arrived = [];
     pulses = pulses.filter((p) => {
       p.t += (PULSE_SPEED * dt) / p.len;
       p.e.act = Math.max(p.e.act, .8);
       if (p.t < 1) return true;
-      if (Math.random() < PASS_ON) fire(p.to);
-      else nodes[p.to].act = Math.max(nodes[p.to].act, .35);
+      arrived.push(p.to);
       return false;
+    });
+    // Fire after the filter, so the new pulses join the list.
+    arrived.forEach((i) => {
+      if (Math.random() < PASS_ON) fire(i);
+      else nodes[i].act = Math.max(nodes[i].act, .35);
     });
   };
 
