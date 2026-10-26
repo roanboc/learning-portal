@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Learn All · ¿Dónde quieres aprender?</title>
-<meta name="description" content="Dos series de películas cortas, labs y simulaciones. Learning Data muestra cómo se mueven los datos y cómo conservan su significado. Learning Systems muestra cómo los sistemas vivos se organizan.">
-<meta property="og:title" content="Learn All"><meta property="og:description" content="Elige un camino: Learning Data o Learning Systems.">
+<title>Learn All · Elige qué aprender</title>
+<meta name="description" content="Dos colecciones para explorar en el navegador. Learning Data: películas cortas, labs y situaciones reales sobre cómo funciona una plataforma de datos. Learning Systems: simulaciones de un mundo vivo, Gaia, de la química y las células a los cerebros, los ecosistemas y las sociedades.">
+<meta property="og:title" content="Learn All"><meta property="og:description" content="¿Qué quieres aprender? Elige Learning Data o Learning Systems.">
 <link rel="alternate" hreflang="en" href="https://learn-all.org/"><link rel="alternate" hreflang="es" href="https://learn-all.org/es/">
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="../assets/portal.css">
 </head>
 <body>
+<canvas class="neural-bg" aria-hidden="true" data-neural-bg></canvas>
 <header class="top"><div class="top-in"><a class="brand" href="./"><img src="../assets/favicon.svg" alt="" width="28" height="28"><span>Learn All</span></a><span class="lang" role="group" aria-label="Idioma"><a href="../" lang="en" hreflang="en">EN</a><a href="./" aria-current="true" lang="es" hreflang="es">ES</a></span></div></header>
 <main>
 <aside class="big-screen" aria-label="Consejo" data-big-screen>
@@ -21,31 +22,51 @@
 </aside>
 <section class="hero">
 <p class="eyebrow">Learn All</p>
-<h1 tabindex="-1">¿Dónde quieres aprender?</h1>
-<p class="lead">Dos series de películas cortas, labs y simulaciones. Cada una se entiende por sí sola: elige la que necesitas hoy.</p>
+<h1 tabindex="-1">¿Qué quieres aprender?</h1>
+<p class="lead">Dos colecciones para explorar en el navegador. Descubre cómo se mueven los datos en una organización, o mira cómo la vida se organiza sola en un mundo simulado. Cada una se entiende por sí sola: empieza por donde quieras.</p>
 </section>
-<nav class="paths" aria-label="Elige una serie">
-<a class="path data" href="https://data.learn-all.org/es/">
-<span class="art" aria-hidden="true"><img src="../assets/art-data.svg" alt="" width="640" height="360"></span>
-<span class="body">
-<span class="tag">Películas · Labs · Situaciones reales</span>
-<strong class="name">Learning Data</strong>
-<span class="desc">Cómo se mueven los datos desde un toque en el teléfono hasta una decisión, y por qué importa su significado.</span>
-<span class="go">Empieza con datos →</span>
-</span>
-</a>
-<a class="path systems" href="https://systems.learn-all.org/">
-<span class="art" aria-hidden="true"><img src="../assets/art-systems.svg" alt="" width="640" height="360"></span>
-<span class="body">
-<span class="tag">Simulaciones · Se ejecuta en el navegador</span>
-<strong class="name">Learning Systems</strong>
-<span class="desc">Pequeños mundos simulados donde el comportamiento surge de reglas locales, sin nadie al mando.</span>
-<span class="go">Explora los sistemas (en inglés) →</span>
-</span>
-</a>
+<nav class="paths" aria-label="Elige un camino">
+<article class="path data">
+<div class="art" role="group" aria-label="Imágenes de Learning Data" data-rotate>
+<img class="is-on" src="../assets/img/data/sharper-sketch.webp" alt="A Sharper Sketch: un modelo conceptual luminoso que une Student, Course admission, Course, Unit enrolment, Unit offering y Class." width="960" height="540" decoding="async">
+<img src="../assets/img/data/too-good-to-be-true.webp" alt="Too good to be true: tres versiones del mismo panel de admisiones el martes a las 10:05, con y sin controles de calidad de datos." width="960" height="540" decoding="async" loading="lazy">
+<img src="../assets/img/data/whats-in-a-word.webp" alt="From words to data: un niño y un adulto miran el mismo pájaro en una rama, con las palabras «this one», «here» y «that» entre ellos." width="960" height="540" decoding="async" loading="lazy">
+</div>
+<div class="body">
+<p class="tag">Películas · Labs prácticos · Situaciones reales</p>
+<h2 class="name"><a href="https://data.learn-all.org/es/">Learning Data</a></h2>
+<p class="desc">Películas cortas, labs y situaciones reales que muestran cómo funciona una plataforma de datos moderna, desde que se captura un dato hasta la decisión que informa, y por qué importa su significado por el camino.</p>
+<p class="meta">Temas: plataformas de datos, modelado de datos, ingeniería analítica, calidad de datos, arquitectura empresarial, y datos maestros y de referencia.</p>
+<span class="go" aria-hidden="true">Empieza con la primera película →</span>
+</div>
+</article>
+<article class="path systems">
+<div class="art" role="group" aria-label="Imágenes de Learning Systems" data-rotate>
+<img class="is-on" src="../assets/img/systems/planet.webp" alt="La portada de Learning Systems: un planeta vivo y luminoso, con los sistemas en los que puedes sumergirte, como Colonies, Bodies, Tissue Lab y Brains." width="960" height="540" decoding="async">
+<img src="../assets/img/systems/early-earth-water.webp" alt="World Viewer, Early Earth, el agua de cerca: moléculas de colores en un mar turquesa antes de que empezara la vida." width="960" height="540" decoding="async" loading="lazy">
+<img src="../assets/img/systems/tissue-lab.webp" alt="Tissue Lab: tres placas de tejido cerebral donde las neuronas se conectan solas con enlaces de colores." width="960" height="540" decoding="async" loading="lazy">
+</div>
+<div class="body">
+<p class="tag">Simulaciones · Labs guiados · En tu navegador</p>
+<h2 class="name"><a href="https://systems.learn-all.org/?lang=es">Learning Systems</a></h2>
+<p class="desc">Simulaciones de un solo mundo, Gaia, visto en distintos niveles de complejidad, de la química y las células a los cuerpos, los sistemas nerviosos, los ecosistemas, el planeta y las sociedades, y en momentos clave de la historia de la vida.</p>
+<p class="meta">Cada parada es una simulación en vivo, y los labs guiados te dejan cambiar una regla y ver su efecto en otro nivel.</p>
+<span class="go" aria-hidden="true">Sumérgete en el planeta →</span>
+</div>
+</article>
 </nav>
+<section class="contact" aria-labelledby="contact-title">
+<div>
+<h2 id="contact-title">¿Preguntas, ideas o comentarios?</h2>
+<p>Yo hago Learn All. Si lo usas para aprender o enseñar, encuentras un error o quieres colaborar, escríbeme.</p>
+</div>
+<a class="contact-go" href="https://au.linkedin.com/in/roanboc" rel="noopener" target="_blank"><svg class="contact-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg><span>Escríbeme en LinkedIn</span><span class="sr">(se abre en una pestaña nueva)</span></a>
+</section>
 </main>
-<footer><p>Cada serie tiene sus propios avisos y su licencia. Las historias y las organizaciones de las películas son ficticias.</p></footer>
+<footer>
+<p>Cada colección tiene sus propios avisos y su licencia. Las personas, los lugares y las organizaciones de las películas de Learning Data son ficticios.</p>
+<p>Imágenes: fotogramas de Learning Data (CC BY 4.0) y capturas de las simulaciones de Learning Systems.</p>
+</footer>
 <script src="../assets/portal.js" defer></script>
 </body>
 </html>
