@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Learn All · Where do you want to learn?</title>
-<meta name="description" content="Two series of short films, labs and simulations. Learning Data shows how data moves and keeps its meaning. Learning Systems shows how living systems organise themselves.">
-<meta property="og:title" content="Learn All"><meta property="og:description" content="Pick a path: Learning Data or Learning Systems.">
+<title>Learn All · Choose a learning path</title>
+<meta name="description" content="Two collections you can explore in your browser. Learning Data: short films, labs and scenarios on how a data platform works. Learning Systems: simulations of one living world, Gaia, from chemistry and cells to brains, ecosystems and societies.">
+<meta property="og:title" content="Learn All"><meta property="og:description" content="What do you want to learn? Choose Learning Data or Learning Systems.">
 <link rel="alternate" hreflang="en" href="https://learn-all.org/"><link rel="alternate" hreflang="es" href="https://learn-all.org/es/">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="assets/portal.css">
 </head>
 <body>
+<canvas class="neural-bg" aria-hidden="true" data-neural-bg></canvas>
 <header class="top"><div class="top-in"><a class="brand" href="./"><img src="assets/favicon.svg" alt="" width="28" height="28"><span>Learn All</span></a><span class="lang" role="group" aria-label="Language"><a href="./" aria-current="true" lang="en" hreflang="en">EN</a><a href="es/" lang="es" hreflang="es">ES</a></span></div></header>
 <main>
 <aside class="big-screen" aria-label="Tip" data-big-screen>
@@ -21,31 +22,44 @@
 </aside>
 <section class="hero">
 <p class="eyebrow">Learn All</p>
-<h1 tabindex="-1">Where do you want to learn?</h1>
-<p class="lead">Two series of short films, labs and simulations. Each one stands on its own, so pick the one you need today.</p>
+<h1 tabindex="-1">What do you want to learn?</h1>
+<p class="lead">Two collections you can explore in your browser. See how data moves through an organisation, or watch life organise itself in a simulated world. Each one stands on its own, so start wherever you like.</p>
 </section>
-<nav class="paths" aria-label="Choose a series">
-<a class="path data" href="https://data.learn-all.org/">
-<span class="art" aria-hidden="true"><img src="assets/art-data.svg" alt="" width="640" height="360"></span>
-<span class="body">
-<span class="tag">Films · Labs · Scenarios</span>
-<strong class="name">Learning Data</strong>
-<span class="desc">How data moves from one tap to one decision, and why its meaning matters.</span>
-<span class="go">Start with data →</span>
-</span>
-</a>
-<a class="path systems" href="https://systems.learn-all.org/">
-<span class="art" aria-hidden="true"><img src="assets/art-systems.svg" alt="" width="640" height="360"></span>
-<span class="body">
-<span class="tag">Simulations · Runs in the browser</span>
-<strong class="name">Learning Systems</strong>
-<span class="desc">Small simulated worlds where behaviour emerges from local rules, with no one in charge.</span>
-<span class="go">Explore the systems →</span>
-</span>
-</a>
+<nav class="paths" aria-label="Choose a learning path">
+<article class="path data">
+<div class="art" role="group" aria-label="Pictures from Learning Data" data-rotate>
+<img class="is-on" src="assets/img/data/sharper-sketch.webp" alt="A Sharper Sketch: a glowing conceptual model linking Student, Course admission, Course, Unit enrolment, Unit offering and Class." width="960" height="540" decoding="async">
+<img src="assets/img/data/too-good-to-be-true.webp" alt="Too good to be true: three versions of the same admissions dashboard at Tuesday 10:05, with and without data quality checks." width="960" height="540" decoding="async" loading="lazy">
+<img src="assets/img/data/whats-in-a-word.webp" alt="From words to data: a child and an adult look at the same bird on a branch, with the words “this one”, “here” and “that” shared between them." width="960" height="540" decoding="async" loading="lazy">
+</div>
+<div class="body">
+<p class="tag">Films · Hands-on labs · Scenarios</p>
+<h2 class="name"><a href="https://data.learn-all.org/">Learning Data</a></h2>
+<p class="desc">Short films, labs and real-world scenarios that show how a modern data platform works, from the moment data is captured to the decision it informs, and why its meaning matters on the way.</p>
+<p class="meta">Topics: data platforms, data modelling, analytics engineering, data quality, enterprise architecture, and master and reference data.</p>
+<span class="go" aria-hidden="true">Start with the first film →</span>
+</div>
+</article>
+<article class="path systems">
+<div class="art" role="group" aria-label="Pictures from Learning Systems" data-rotate>
+<img class="is-on" src="assets/img/systems/planet.webp" alt="The Learning Systems home page: a glowing living planet, labelled with the systems you can dive into, such as Colonies, Bodies, Tissue Lab and Brains." width="960" height="540" decoding="async">
+<img src="assets/img/systems/early-earth-water.webp" alt="World Viewer, Early Earth, water up close: coloured molecules drifting in a teal sea before life began." width="960" height="540" decoding="async" loading="lazy">
+<img src="assets/img/systems/tissue-lab.webp" alt="Tissue Lab: three dishes of brain tissue where neurons wire themselves together with coloured connections." width="960" height="540" decoding="async" loading="lazy">
+</div>
+<div class="body">
+<p class="tag">Simulations · Guided labs · Runs in your browser</p>
+<h2 class="name"><a href="https://systems.learn-all.org/">Learning Systems</a></h2>
+<p class="desc">Simulations of one world, Gaia, seen at different levels of complexity, from chemistry and cells to bodies, nervous systems, ecosystems, the planet and societies, and at key moments in the history of life.</p>
+<p class="meta">Every stop is a live simulation, and guided labs let you change one rule and see its effect at another level.</p>
+<span class="go" aria-hidden="true">Dive into the planet →</span>
+</div>
+</article>
 </nav>
 </main>
-<footer><p>Each series has its own notices and licence. The stories and organisations in the films are fictional.</p></footer>
+<footer>
+<p>Each collection has its own notices and licence. The people, places and organisations in the Learning Data films are fictional.</p>
+<p>Pictures: stills from Learning Data (CC BY 4.0) and screenshots of Learning Systems simulations.</p>
+</footer>
 <script src="assets/portal.js" defer></script>
 </body>
 </html>
